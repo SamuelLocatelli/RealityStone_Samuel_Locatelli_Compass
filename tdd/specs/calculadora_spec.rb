@@ -57,15 +57,12 @@ describe ('Calculadora') do
         expect(calculadora.subtracao(6, 0)).to eq 6
     end
     it ('Deve realizar a subtração entre 0 e um número qualquer') do
-        expect(calculadora.subtracao(0, -23)).to eq -23
+        expect(calculadora.subtracao(0, -23)).to eq 23
     end
 
     #DIVISÃO
     it ('Deve realizar a divisão entre dois números positivos') do
         expect(calculadora.divisao(12, 6)).to eq 2
-    end
-    it ('Deve realizar a divisão entre um número positivo e 0') do
-        expect(calculadora.divisao(34, 0)).to include 'Não é possível realizar essa operação!'
     end
     it ('Deve realizar a divisão entre 0 e um número positivo') do
         expect(calculadora.divisao(0, 12)).to eq 0
